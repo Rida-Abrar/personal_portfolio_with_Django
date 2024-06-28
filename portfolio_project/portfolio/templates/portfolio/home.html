@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <meta name="description" content="A professional portfolio showcasing my education, skills, experience, projects, and contact information.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color:black;
+    color: whitesmoke;
+}
+
+
+/* Header Section */
+header {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px 0;
+    text-align: left;
+    position: reative;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+.user-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.header-text {
+    text-align: left;
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+.header-text h2 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.header-text .title-line {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-style: italic;
+}
+.social-media-links {
+    margin-top: 20px;
+}
+
+.social-media-links a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.5em;
+    transition: color 0.3s;
+}
+
+.social-media-links a:hover {
+    color: #ff6f61; /* Change to your preferred hover color */
+}
+
+
+
+/* Navigation */
+nav {
+    background: #333;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s ease-in-out;
+}
+
+
+nav ul li a:hover {
+    background: #444;
+    border-radius: 5px;
+}
+/* Home Section */
+#home {
+    background-color: #333;
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.home-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.home-text p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.home-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.circular-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid white; /* Optional: Add a border */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Optional: Add a shadow */
+}
+/* About Me Section */
+#about {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 80px 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333; /* Dark text color */
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666; /* Medium gray text color */
+}
+
+
+/* Sections */
+/* Education Section */
+/* Education Section */
+#education {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+#education h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.education-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.education-item {
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 20%;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.education-item:hover {
+    transform: scale(1.05);
+}
+
+.education-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.education-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.education-item img {
+    width: 60px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+/* Skills Section */
+#skills {
+    background-color:black;
+    padding: 60px 0;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#skills h2 {
+    margin-bottom: 40px;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+#skills ul li {
+    margin: 6px;
+    padding: 10px 20px;
+    background-color: midnightblue;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Experience Section */
+#experience {
+    background-color: white; /* Light gray background */
+    padding: 60px 0;
+    text-align: center;
+    color: black;
+}
+
+.experience-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.experience-content h2 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #333; /* Dark text color */
+}
+
+.experience-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666; /* Medium gray text color */
+}
+
+
+/* Projects Section */
+#projects {
+    background-color:white;
+    padding: 60px 0;
+    text-align: left;
+    color: black;
+}
+
+#projects h2 {
+    margin-bottom: 40px;
+}
+
+.project {
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color:whitesmoke;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin: 5px 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: black;
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+}
+
+#contact h2 {
+    margin-bottom: 30px;
+}
+
+#contact form {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color:white;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 60%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2.5px;
+    font-size: 1em;
+}
+
+#contact form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 2.5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease-in-out;
+}
+
+#contact form button:hover {
+    background: #555;
+}
+    </style>
+</head>
+<body>
+
+    <header style="background-image: url('https://www.shutterstock.com/shutterstock/photos/1723930225/display_1500/stock-photo-beautiful-abstract-grungy-blue-stucco-wall-background-in-cold-mood-pantone-of-the-year-color-1723930225.jpg');">
+        <div class="header-content">
+            <img src="Screenshot_20231219-220004.jpg" alt="User Picture" class="user-picture">
+            <div class="header-text">
+                <h1>RIDA ABRAR</h1>
+                <h2>Front-End Web Developer</h2>
+                <p class="title-line">Passionate about coding and solving problems</p>
+                <div class="social-media-links">
+                    <a href="https://www.instagram.com/ridaabrar2/?hl=en" target="_blank"  title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="linkedin.com/in/rida-abrar-71b63a227" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.facebook.com/ridarawjput.ridarawjput" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://github.com/Rida-Abrar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="horizontal-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <div class="home-content">
+            <div class="home-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Explore my skills, experience, and projects.</p>
+            </div>
+            <div class="home-image">
+                <img src="p.jpg" alt="Home Image" class="circular-image">
+            </div>
+        </div>
+       
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>My name is Rida Abrar. I am a computer scientist with a great interest in coding. I can develop front-end web applications, software, mobile applications (iOS/Android), and work as a Data Analyst (Data Mining, Machine Learning, and Deep Learning).</p>
+        </div>
+        
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-item">
+                <a href="https://www.umt.edu.pk" target="_blank">
+                    <h3>University of Management and Technology (UMT)</h3>
+                    <p>BS in Computer Science</p>
+                    <img src="https://dailytimes.com.pk/assets/uploads/2020/06/06/UMT-1280x720.jpg" alt="UMT">
+                </a>
+            </div>
+            <div class="education-item">
+                <a href="https://www.lcwu.edu.pk" target="_blank">
+                    <h3>Lahore College for Women University (LCWU)</h3>
+                    <p>High School</p>
+                    <img src="https://academiamag.com/wp-content/uploads/2020/04/LCWU.jpg" alt="LCWU">
+                </a>
+            </div>
+            <div class="education-item">
+                <a href="https://www.learningall.com/al-noor-group-of-colleges/" target="_blank">
+                    <h3>Al-Noor Group of Schools and Colleges</h3>
+                    <p>Metric</p>
+                    <img src="https://www.learningall.com/wp-content/uploads/2016/05/Al-Noor-College.jpg" alt="Al-Noor">
+                </a>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript</li>
+            <li>React.js</li>
+            <li>Bootstrap</li>
+            <li>Software Development</li>
+            <li>Front-end Web Development</li>
+            <li>Feature Engineering</li>
+            <li>Database (MySQL)</li>
+        </ul>
+    </section>
+    <section id="experience">
+        <div class="experience-content">
+            <h2>Experience</h2>
+            <p>I have worked on many hands-on projects during my academic career and internships with various companies.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2><u>Projects</u></h2>
+        <div class="project">
+            <h3>Project Title</h3>
+            <ul>
+            <li>Hospital Management Project — OOP</li>
+            <li>Hospital Management Project — MySQL</li>
+            <li>Personal Portfolio — HTML, CSS, JS</li>
+            </ul>
+        </div>
+        <!-- Add more project sections as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Form submission handler
+    const form = document.querySelector('#contact form');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Message sent successfully!');
+        form.reset(); // Reset form fields after submission
+    });
+});
+    </script>
+</body>
+</html>
